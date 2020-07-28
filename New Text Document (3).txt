@@ -1,0 +1,127 @@
+select * from dbo.EMPSALARYTEMP where year(salmonth)= '2015'
+
+select * from ORGANIZATIONMASTER
+
+select * from dbo.DEPARTMENT where orgid= 'pplabour'
+
+select empid from EMPINFOVIEW where orgid ='Hatcheries Casual Staff' and department ='NEW M.T.DRIVER'
+
+
+select * from empmaster  where empid in 
+( select empid from EMPINFOVIEW where orgid ='Hatcheries Casual Staff' and department ='NEW M.T.DRIVER')
+order by empid
+
+select * from dbo.EMPSALARYSTRUCTURE  where empid in 
+( select empid from EMPINFOVIEW where orgid ='Hatcheries Casual Staff' and department ='NEW M.T.DRIVER')
+order by empid
+
+
+select * from dbo.EMPDEPARTMENT where empid in 
+( select empid from EMPINFOVIEW where orgid ='Hatcheries Casual Staff' and department ='NEW M.T.DRIVER')
+order by empid
+
+
+update empmaster set orgid='PPLABOUR' where
+empid in 
+( select empid from EMPINFOVIEW where orgid ='Hatcheries Casual Staff' and department ='NEW M.T.DRIVER')
+
+update EMPSALARYSTRUCTURE set orgid='PPLABOUR'
+where empid in 
+( select empid from EMPINFOVIEW where orgid ='Hatcheries Casual Staff' and department ='NEW M.T.DRIVER')
+
+update EMPDEPARTMENT set orgid='PPLABOUR', depno ='35' where 
+empid in 
+( select empid from EMPINFOVIEW where orgid ='Hatcheries Casual Staff' and department ='NEW M.T.DRIVER')
+
+
+---ORG CHANGE---------
+
+update empmaster set orgid='PPLABOUR' where
+empid in 
+( select empid from t)
+
+update EMPSALARYSTRUCTURE set orgid='PPLABOUR'
+where empid in 
+( select empid from t)
+
+update EMPDEPARTMENT set orgid='PPLABOUR', depno ='35' where 
+empid in 
+( select empid from t)
+
+-------------------------------
+
+select * from department where  orgid='PHOENIX POULTRY PARIYAT UNIT' and department like '%WO%'
+
+
+update empmaster set orgid='PHOENIX POULTRY PARIYAT UNIT' where
+empid in ( select empid from t) and  orgid='Hatcheries Casual Staff'
+
+update EMPSALARYSTRUCTURE set orgid='PHOENIX POULTRY PARIYAT UNIT'
+where empid in ( select empid from t) and  orgid='Hatcheries Casual Staff'
+
+update EMPDEPARTMENT set depno ='26',orgid='PHOENIX POULTRY PARIYAT UNIT' where 
+empid in ( select empid from t) and  orgid='Hatcheries Casual Staff'
+
+---------------23/5/15------------------
+
+select * from dbo.ORGANIZATIONMASTER
+-------------------
+update empmaster set orgid='PHOENIX POULTRY APF UNIT' where
+empid in ( select empid from t)
+
+update EMPSALARYSTRUCTURE set orgid='PHOENIX POULTRY APF UNIT'
+where empid in ( select empid from t)
+
+update EMPDEPARTMENT set orgid='PHOENIX POULTRY APF UNIT', depno ='97' where 
+empid in ( select empid from t)
+---------------------------------------
+
+update ORGANIZATIONMASTER set orgid='PHOENIX POULTRY WB UNIT' where  orgid ='WB LABOUR'
+update empmaster set orgid='PHOENIX POULTRY WB UNIT' where orgid ='WB LABOUR'
+update EMPSALARYSTRUCTURE set orgid='PHOENIX POULTRY WB UNIT' where orgid ='WB LABOUR'
+update EMPDEPARTMENT set orgid='PHOENIX POULTRY WB UNIT' where  orgid ='WB LABOUR'
+
+
+SELECT * FROM empmaster where empid ='**ST0692'
+SELECT * FROM EMPSALARYSTRUCTURE where empid ='**ST0568'
+SELECT * FROM EMPDEPARTMENT where orgid ='PHOENIX POULTRY' and empid ='**ST0624'
+
+select * from ORGANIZATIONMASTER where orgid ='RAIPUR LABOUR'
+
+select * from department where orgid ='PHOENIX POULTRY APF UNIT'
+
+select * from salacctransfer where orgid ='Phoenix Poultry' and salmonth ='4/1/2015' and paymode='BANK'
+
+
+
+select * from inc1 
+
+
+update inc1 set OA1=OA1+INCAMT
+
+
+
+---ORG CHANGE---------
+select * from empmaster where empid ='**FU0321'
+select * from dbo.ORGANIZATIONMASTER
+select * from dbo.DEPARTMENT where orgid ='PHOENIX POULTRY RAIPUR UNIT'
+
+
+
+update empmaster set orgid='PHOENIX POULTRY RAIPUR UNIT' where
+uid ='1687'
+update EMPSALARYSTRUCTURE set orgid='PHOENIX POULTRY RAIPUR UNIT'
+where uid ='1687'
+
+update EMPDEPARTMENT set orgid='PHOENIX POULTRY RAIPUR UNIT', depno ='8' where 
+uid ='1687'
+
+
+select e.empid,e.name,s.pfbasic from empmaster e 
+inner join empsalarystructure s on e.uid = s.uid and status =1 
+and e.orgid not in ('PHOENIX POULTRY (HO)','Phoenix Hatcheries') order by e.uid
+
+
+
+
+

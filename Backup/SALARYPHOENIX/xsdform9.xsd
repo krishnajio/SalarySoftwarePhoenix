@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xsdform9" targetNamespace="http://tempuri.org/xsdform9.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/xsdform9.xsd" xmlns:mstns="http://tempuri.org/xsdform9.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Document">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v1_form9">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="empid" type="xs:string" />
+              <xs:element name="name" type="xs:string" minOccurs="0" />
+              <xs:element name="fname" type="xs:string" minOccurs="0" />
+              <xs:element name="mname" type="xs:string" minOccurs="0" />
+              <xs:element name="dob" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="doj" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="gender" type="xs:string" minOccurs="0" />
+              <xs:element name="empcaste" type="xs:string" minOccurs="0" />
+              <xs:element name="joinpost" type="xs:string" minOccurs="0" />
+              <xs:element name="qualification1" type="xs:string" minOccurs="0" />
+              <xs:element name="contactno" type="xs:string" minOccurs="0" />
+              <xs:element name="accountno" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

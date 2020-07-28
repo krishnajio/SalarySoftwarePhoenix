@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="XSDDateWiseSal" targetNamespace="http://tempuri.org/XSDDateWiseSal.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/XSDDateWiseSal.xsd" xmlns:mstns="http://tempuri.org/XSDDateWiseSal.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Document">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vwDateWiseSal">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrgID" type="xs:string" />
+              <xs:element name="OrganizationName" type="xs:string" />
+              <xs:element name="Address" type="xs:string" minOccurs="0" />
+              <xs:element name="EpfNo" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpID" type="xs:string" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="basic" type="xs:decimal" minOccurs="0" />
+              <xs:element name="salmonth" type="xs:dateTime" />
+              <xs:element name="lwp" type="xs:decimal" minOccurs="0" />
+              <xs:element name="amtpay" type="xs:decimal" minOccurs="0" />
+              <xs:element name="da" type="xs:decimal" minOccurs="0" />
+              <xs:element name="hra" type="xs:decimal" minOccurs="0" />
+              <xs:element name="cca" type="xs:decimal" minOccurs="0" />
+              <xs:element name="oa1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="oa2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="edc_cs" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Before_x0020_Epf" type="xs:decimal" minOccurs="0" />
+              <xs:element name="epf" type="xs:decimal" minOccurs="0" />
+              <xs:element name="grossSalary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="epfded" type="xs:decimal" minOccurs="0" />
+              <xs:element name="groupinsuranceded" type="xs:decimal" minOccurs="0" />
+              <xs:element name="securitydepoded" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tax" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tdsded" type="xs:decimal" />
+              <xs:element name="oded" type="xs:decimal" minOccurs="0" />
+              <xs:element name="totalded" type="xs:decimal" minOccurs="0" />
+              <xs:element name="remark" type="xs:string" minOccurs="0" />
+              <xs:element name="netpay" type="xs:decimal" minOccurs="0" />
+              <xs:element name="paymode" type="xs:string" minOccurs="0" />
+              <xs:element name="loan" type="xs:decimal" />
+              <xs:element name="session" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="basicPay" type="xs:decimal" />
+            <xs:attribute name="JoinPost" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

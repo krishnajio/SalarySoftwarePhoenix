@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="XSDBonus" targetNamespace="http://tempuri.org/XSDBonus.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/XSDBonus.xsd" xmlns:mstns="http://tempuri.org/XSDBonus.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Document">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TmpBonus">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="empid" type="xs:string" minOccurs="0" />
+              <xs:element name="empname" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0032_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0033_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0034_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0035_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0036_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0037_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0038_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0039_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0031_0" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0031_1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0031_2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="orgid" type="xs:string" minOccurs="0" />
+              <xs:element name="department" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

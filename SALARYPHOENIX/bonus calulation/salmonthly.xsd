@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="salmonthly" targetNamespace="http://tempuri.org/salmonthly.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/salmonthly.xsd" xmlns:mstns="http://tempuri.org/salmonthly.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Document">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="salmonthly">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Expr1" type="xs:string" />
+							<xs:element name="name" type="xs:string" minOccurs="0" />
+							<xs:element name="department" type="xs:string" minOccurs="0" />
+							<xs:element name="orgid" type="xs:string" />
+							<xs:element name="empid" type="xs:string" />
+							<xs:element name="salmonth" type="xs:dateTime" />
+							<xs:element name="saldate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="basic" type="xs:decimal" minOccurs="0" />
+							<xs:element name="amtpay" type="xs:decimal" minOccurs="0" />
+							<xs:element name="da" type="xs:decimal" minOccurs="0" />
+							<xs:element name="hra" type="xs:decimal" minOccurs="0" />
+							<xs:element name="cca" type="xs:decimal" minOccurs="0" />
+							<xs:element name="oa1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="oa2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="it" type="xs:decimal" minOccurs="0" />
+							<xs:element name="educease" type="xs:decimal" minOccurs="0" />
+							<xs:element name="proftax" type="xs:decimal" minOccurs="0" />
+							<xs:element name="collegeloan" type="xs:decimal" minOccurs="0" />
+							<xs:element name="lwp" type="xs:decimal" minOccurs="0" />
+							<xs:element name="remark" type="xs:string" minOccurs="0" />
+							<xs:element name="amt833" type="xs:decimal" minOccurs="0" />
+							<xs:element name="amt367" type="xs:decimal" minOccurs="0" />
+							<xs:element name="sheetno" type="xs:decimal" minOccurs="0" />
+							<xs:element name="userid" type="xs:string" minOccurs="0" />
+							<xs:element name="groupinsded" type="xs:decimal" minOccurs="0" />
+							<xs:element name="secudep" type="xs:decimal" minOccurs="0" />
+							<xs:element name="od1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="paymode" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

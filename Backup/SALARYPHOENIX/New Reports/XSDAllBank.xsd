@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="XSDAllBank" targetNamespace="http://tempuri.org/XSDAllBank.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/XSDAllBank.xsd" xmlns:mstns="http://tempuri.org/XSDAllBank.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Document">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="vBakAll">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="orgid" type="xs:string" />
+							<xs:element name="bank" type="xs:string" minOccurs="0" />
+							<xs:element name="salmonth" type="xs:dateTime" />
+							<xs:element name="netsal" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="DocumentKey1">
+			<xs:selector xpath=".//mstns:vBakAll" />
+			<xs:field xpath="mstns:orgid" />
+			<xs:field xpath="mstns:salmonth" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>
